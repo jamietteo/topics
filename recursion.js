@@ -5,7 +5,7 @@ const print_values = array => {
   }
 }
 
-// interactive recursion 1,34ms runtime
+// iterative recursion 1,34ms runtime
 const print_values_iter = (acc, array) => {
   if(acc >= array.length) return;
   console.log(array[acc]);
@@ -20,7 +20,7 @@ const sum_array = (array, sum) => {
   return sum
 };
 
-// sum array with interactive recursion 0,24ms runtime
+// sum array with iterative recursion 0,24ms runtime
 const sum_array_iter = (sum, index, array) => {
   if(index >= array.length) return sum;
   return sum_array_iter(sum + array[index], index + 1, array);
