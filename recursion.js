@@ -1,7 +1,7 @@
 // for loop 3,21ms runtime
 const print_values = array => {
   for(let acc = 0; acc<array.length;acc++){
-    console.log(array[acc])
+    console.log(array[acc]);
   }
 }
 
@@ -17,7 +17,7 @@ const sum_array = (array, sum) => {
   for(let i = 0; i<array.length;i++){
     sum += array[i];
   }
-  return sum
+  return sum;
 };
 
 // sum array with iterative recursion 0,24ms runtime
