@@ -1,6 +1,3 @@
-## simple typeof
-
-```ocaml
 module type T = sig
   type t
   val t : t
@@ -15,4 +12,3 @@ let one = typeof 1
 module One = (val one)
 type one = One.t
 let one : one = One.t
-```
