@@ -14,12 +14,12 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
-const recursiveBubbleSort = (arr, n = arr.length) => {
+const bubbleSort_recur = (arr, n = arr.length) => {
   if (n == 1) return arr;
   for (let j = 0; j < n - 1; j++){
     if (arr[j] > arr[j + 1]){
       [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
     };
   };  
-  return recursiveBubbleSort(arr, n-1);
+  return bubbleSort_recur(arr, n-1);
 };
