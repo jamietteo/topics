@@ -4,7 +4,7 @@
 
 // for loop 3,21ms runtime
 const print_values = array => {
-  for (let acc = 0; acc<array.length;acc++){
+  for (let acc = 0; acc < array.length; acc++) {
     console.log(array[acc]);
   }
 }
@@ -18,7 +18,7 @@ const print_values_iter = (acc, array) => {
 
 // sum array with for loop 2,5ms runtime
 const sum_array = (array, sum) => {
-  for (let i = 0; i<array.length;i++){
+  for (let i = 0; i < array.length; i++) {
     sum += array[i];
   }
   return sum;

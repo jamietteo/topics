@@ -1,9 +1,9 @@
 // n! -> k = n * (n-1) * (n-2) * (n-3) ... 
 
 // iteration function to factorial number
-const factorial_iter = (n) =>{
+const factorial_iter = (n) => {
   let a = 1;
-  for (let i = 1;i <= n;i++){
+  for (let i = 1; i <= n; i++) {
     a *= i;
   }
   return a;
