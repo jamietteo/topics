@@ -5,7 +5,7 @@ const User = {
 
 console.log(User);
 
-// allows mutation of the state
+// allows mutation
 const mutableUser = User;
 mutableUser.location = "Lisboa";
 mutableUser.name = "Miguel";
