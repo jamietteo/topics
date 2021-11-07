@@ -16,8 +16,8 @@ const newUser = (name, location) => {
   return {
     name: name,
     location: location,
-  }
-}
+  };
+};
 
 const immutableUser = Object.freeze(newUser("Luis", "Porto"));
 console.log(immutableUser);
