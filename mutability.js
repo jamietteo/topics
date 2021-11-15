@@ -1,16 +1,9 @@
-const User = {
-  name: "Tiago",
-  location: "Lagos"
-};
-
 const newUser = (name, location) => {
   return {
     name: name,
     location: location,
   };
 };
-
-console.log(User); // { name: 'Tiago', location: 'Lagos' }
 
 // allows mutation
 const mutableUser = newUser("Pedro", "Lisboa");
