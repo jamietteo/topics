@@ -10,10 +10,10 @@ const print_values = array => {
 }
 
 // iterative recursion 1,34ms runtime
-const print_values_iter = (acc, array) => {
+const print_values_recur = (acc, array) => {
   if (acc >= array.length) return;
   console.log(array[acc]);
-  return print_values_iter(acc + 1, array);
+  return print_values_recur(acc + 1, array);
 };
 
 // sum array with for loop 2,5ms runtime
@@ -24,8 +24,8 @@ const sum_array = (array, sum) => {
   return sum;
 };
 
-// sum array with iterative recursion 0,24ms runtime
-const sum_array_iter = (sum, index, array) => {
+// sum array with recursion 0,24ms runtime
+const sum_array_recur = (sum, index, array) => {
   if (index >= array.length) return sum;
-  return sum_array_iter(sum + array[index], index + 1, array);
+  return sum_array_recur(sum + array[index], index + 1, array);
 };
