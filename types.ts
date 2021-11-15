@@ -26,7 +26,9 @@ type Vegetable =
   | 'lettuce';
 
 // 'apple' | 'pear' | 'orange' | 'broccoli' | 'carrot' | 'lettuce';
-type HealthyFoods = Fruit | Vegetable;
+type HealthyFoods =
+  | Fruit
+  | Vegetable;
 
 // Function types
 type Add = (x: number, y: number) => number;
