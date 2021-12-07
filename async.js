@@ -6,10 +6,8 @@ const doSomething = () => {
       console.log(i);
       async(() => increment(n, i + 1));
     }
-  }
-
+  };
   async(() => increment(10));
   async(() => increment(10));
-  async(() => increment(10));
-}
+};
 doSomething();
